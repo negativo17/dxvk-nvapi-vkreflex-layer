@@ -1,0 +1,17 @@
+diff -Naur dxvk-nvapi-0.9.0.old/layer/meson.build dxvk-nvapi-0.9.0/layer/meson.build
+--- dxvk-nvapi-0.9.0.old/layer/meson.build	2026-01-11 17:36:33.172213743 +0100
++++ dxvk-nvapi-0.9.0/layer/meson.build	2026-01-11 17:36:48.144847209 +0100
+@@ -25,13 +25,9 @@
+     output: 'config.h',
+ )
+ 
+-vk_headers = include_directories('../external/Vulkan-Headers/include')
+-vkroots = include_directories('../external/vkroots')
+-
+ vkreflex_layer = shared_library(
+     'dxvk_nvapi_vkreflex_layer',
+     sources: ['vulkan_reflex_layer.cpp', config, version],
+-    include_directories: [vk_headers, vkroots],
+     install: true,
+ )
+ 
