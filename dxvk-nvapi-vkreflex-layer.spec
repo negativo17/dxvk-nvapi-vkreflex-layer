@@ -12,12 +12,10 @@ Source0:        %{url}/archive/v%{version}.tar.gz#/%{upstream_name}-%{version}.t
 Patch0:         dxvk-nvapi-system-headers.patch
 
 BuildRequires:  meson >= 1.0
-#BuildRequires:  ninja
 BuildRequires:  gcc-c++
-#BuildRequires:  git
 BuildRequires:  glslang
-BuildRequires:  vkroots-devel
-BuildRequires:  vulkan-headers
+BuildRequires:  vkroots-devel >= 0^20250716git51c3213-1.fc43
+BuildRequires:  vulkan-headers >= 1.4.321
 
 Requires:       vulkan-loader
 
