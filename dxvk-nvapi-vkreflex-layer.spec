@@ -14,8 +14,8 @@ Patch0:         dxvk-nvapi-system-headers.patch
 BuildRequires:  meson >= 1.0
 BuildRequires:  gcc-c++
 BuildRequires:  glslang
-BuildRequires:  vkroots-devel >= 0^20250716git51c3213-1.fc43
-BuildRequires:  vulkan-headers >= 1.4.321
+BuildRequires:  vkroots-devel >= 0^20250716git51c3213
+BuildRequires:  vulkan-headers
 
 Requires:       vulkan-loader
 
