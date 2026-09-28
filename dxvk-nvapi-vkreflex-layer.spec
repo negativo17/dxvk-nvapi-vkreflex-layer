@@ -1,8 +1,8 @@
 %global upstream_name dxvk-nvapi
 
 Name:           %{upstream_name}-vkreflex-layer
-Version:        0.9.1
-Release:        2%{?dist}
+Version:        0.9.2
+Release:        1%{?dist}
 Summary:        NVIDIA Reflex Vulkan layer
 License:        MIT
 URL:            https://github.com/jp7677/%{upstream_name}
@@ -44,6 +44,9 @@ cd layer
 %{_libdir}/libdxvk_nvapi_vkreflex_layer.so
 
 %changelog
+* Mon Sep 28 2026 Simone Caronni <negativo17@gmail.com> - 0.9.2-1
+- Update to 0.9.2.
+
 * Tue Jan 27 2026 Simone Caronni <negativo17@gmail.com> - 0.9.1-2
 - Drop glslang BuildRequires, update description.
 
